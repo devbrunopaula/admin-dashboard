@@ -41,7 +41,7 @@ function Copyright() {
     <Typography variant="body2" color="textSecondary" align="center">
       {"Copyright © "}
       <Link color="inherit" href="https://material-ui.com/">
-        Uddeshya Singh
+        Bruno Paula
       </Link>{" "}
       {new Date().getFullYear()}
       {"."}
@@ -136,6 +136,8 @@ export default function Dashboard() {
   const palletType = darkState ? "dark" : "light";
   const mainPrimaryColor = darkState ? orange[500] : lightBlue[500];
   const mainSecondaryColor = darkState ? deepOrange[900] : deepPurple[500];
+  
+  
   const darkTheme = createMuiTheme({
     palette: {
       type: palletType,
@@ -147,6 +149,7 @@ export default function Dashboard() {
       }
     }
   });
+
   const classes = useStyles();
   const handleThemeChange = () => {
     setDarkState(!darkState);

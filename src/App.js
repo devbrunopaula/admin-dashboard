@@ -1,7 +1,24 @@
 import React from "react";
-import Dashboard from "./Dashboard/Dashboard";
-import "./styles.css";
+import { Grid, Paper, } from "@material-ui/core";
+import Test from './components/Test/Test'
 
-export default function App() {
-  return <Dashboard />;
+const App = () => {
+  return (
+    <>
+      <Grid item xs={12} md={8} lg={9}>
+          <Paper >
+            <Test/>
+          </Paper>
+      </Grid>
+       <Grid item xs={12} md={4} lg={3}>
+          <Paper >
+            <Test/>
+          </Paper>
+        </Grid>
+    </>
+      
+  )
 }
+
+
+export default App
